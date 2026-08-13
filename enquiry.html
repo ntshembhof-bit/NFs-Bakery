@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - NF's</title>
+
+</head>
+<body>
+    <!--========================-->
+    <!--Customer Enquiry section-->
+    <!--========================-->
+    <h1>Make an Enquiry</h1>
+
+    <p>Have a question about our products or want something special?
+        Please fill in the enquiry form below.</p>
+
+        <!--============-->
+        <!--Enquiry Form-->
+        <!--============-->
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+             <!--=================-->
+             <!--Product Selection-->
+             <!--=================-->
+            <label for="order">What would you love to order?</label><br>
+            <select type="order" id="order" name="order" >
+                 <option value="">--Select a product--</option>
+                 <option value="cake">Cake</option>
+                 <option value="cupcakes">Cupcakes</option>
+                 <option value="cookies">Cookies</option>
+                 <option value="Pastries">Pastries</option>
+                 <option value="bread">Bread</option>
+            </select><br><br>
+
+           <label for="quantity">How many would you like to order</label><br>
+           <input type="number" id="quantity" name="quantity" min="1"required>
+           <br><br>
+           <label for="date">Preffered collection date:</label><br>
+           <input type="date" id="date" name="date">
+           <br><br>
+           
+           <label for="message">Any other important information?</label><br>
+           <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+           <br><br>
+           <input type="submit" value="Submit">
+        </form>
+
+        <!--==================-->
+        <!--Navigation Menu-->
+        <!--==================-->
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+     <!--================-->   
+     <!--Website Footer-->   
+     <!--================-->
+
+    <footer>
+        <p>&copy; 2026 NF's Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
