@@ -1,0 +1,465 @@
+/* =========================================================
+   NF'S BAKERY - EXTERNAL CSS STYLE SHEET
+   ========================================================= */
+
+/* =========================================================
+   1. TAG SELECTOR (BODY)
+   Applies a broad style to the entire page.
+   The body selector affects all content inside <body>.
+   ========================================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    color:#3E2723;
+    background-color: #F7F1E3;
+    padding: 5px;
+}
+
+/* =========================================================
+   2. GROUPING SELECTOR (HEADINGS)
+   Applies the same style to several selectors at once.
+   This changes all h1 and h2 headings.
+   ========================================================= */
+
+h1,
+h2 {
+    font-family: Georgia, serif;
+    color: #6F4E37;
+}
+
+/* =========================================================
+   3. HEADER
+   Styles the top section: logo, name, slogan and nav.
+   ========================================================= */
+
+header {
+    background-color: #DFB899;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 4px solid #D8865B;
+}
+
+/* Style the bakery logo */
+
+header img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* product images*/
+.product img {
+    width: 100px;
+    max-width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Main website heading */
+
+header h1 {
+    margin-bottom: 5px;
+
+    /* rem is a relative unit.
+    1rem normally refers to the root HTML font size.
+    Using rem allows text to scale more consistently. */
+    font-size: 2.5rem;
+}
+
+/* Style the bakery slogan */
+
+header p {
+    font-style: italic;
+    color: #6F4E37;
+    margin-top: 5px;
+}
+
+/* =========================================================
+   4. NAVIGATION
+   The nav is nested inside header in this HTML, so we
+   target it as header nav to keep the selector specific.
+   ========================================================= */
+
+header nav {
+    background-color: #6F4E37;
+    padding: 15px;
+
+    /* margin-top creates space between the slogan and
+    the navigation bar. */
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* =========================================================
+   4.1 COMPOUND SELECTOR
+   header nav a means:
+   "Select <a> elements that are inside <nav>, inside <header>."
+   Style the links inside the navigation.
+   ========================================================= */
+
+header nav a {
+    color: #F7F1E3;
+    text-decoration: none;
+    font-weight: bold;
+
+    /* em is a relative unit.
+    1em is based on the font size of the element. */
+    padding: 0.5em 1em;
+
+    /* border-radius gives the navigation links slightly rounded corners. */
+    border-radius: 5px;
+
+    /* transition creates a smooth change when the hover effect occurs. */
+    transition: 0.3s;
+}
+
+/* =========================================================
+   4.2 NAVIGATION LIST - FLEXBOX
+   ========================================================= */
+
+/* Flexbox is used to arrange elements in a row or column.
+   display: flex turns the navigation list into a flex container.
+   justify-content controls horizontal positioning.
+   align-items controls vertical positioning.
+   gap creates consistent spacing between the links. */
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    /* Remove the default bullet points. */
+    list-style: none;
+
+    /* Remove the browser's default padding. */
+    padding: 0;
+
+    /* Remove the browser's default margin. */
+    margin: 0;
+}
+
+/* =========================================================
+   4.3 :HOVER PSEUDO-CLASS
+   Change the navigation link when the mouse is over it.
+   ========================================================= */
+
+header nav a:hover {
+    background-color: #B8865B;
+    text-decoration: underline;
+}
+
+/* =========================================================
+   4.4 :FOCUS PSEUDO-CLASS
+   :focus applies when an element receives keyboard focus.
+   This is particularly important for accessibility, since
+   a user can move through links using the keyboard.
+   ========================================================= */
+
+header nav a:focus {
+    outline: 3px solid #A67C52;
+    outline-offset: 3px;
+}
+/*=======================
+Product grid layout
+========================*/
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+.products-card{
+    background-color:#E8D5BE;
+    padding: 20px;
+    border: 1px solid #B8865B;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* =========================================================
+   5. MAIN CONTENT
+   ========================================================= */
+
+main {
+    /* max-width prevents the content from becoming
+    excessively wide on large screens. */
+    max-width: 1000px;
+
+    /* margin: 30px auto means: 30px = top and bottom margin
+    auto = automatically centre the element horizontally */
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* ---------------------------------------------------------
+   6. IMAGES
+   --------------------------------------------------------- */
+
+img {
+    /* max-width: 100% prevents an image from becoming
+    wider than its containing element.
+    This is useful for responsive websites. */
+    max-width: 100%;
+
+    /* Keeps the image's original proportions. */
+    height: auto;
+}
+      
+    
+
+
+/* ---------------------------------------------------------
+   7. LINKS
+   --------------------------------------------------------- */
+
+a {
+    color: #6F4E37;
+}
+
+/* ---------------------------------------------------------
+   8. FOOTER
+   --------------------------------------------------------- */
+
+footer {
+    background-color: #3E2723;
+    color: #F7F1E3;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* =========================================================
+   9. RESPONSIVE DESIGN - TABLETS
+   ========================================================= */
+
+/* A media query allows CSS to change depending on the size
+   of the screen. This breakpoint targets screens that are
+   768px wide or smaller — useful for tablets. */
+
+@media (max-width: 768px) {
+
+    /* Change the navigation from a row to a column.
+    This makes the navigation easier to use on smaller screens. */
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Reduce the heading size on smaller screens. */
+    header h1 {
+        font-size: 2rem;
+    }
+
+    /* Reduce the main content padding. */
+    main {
+        padding: 0 10px;
+    }
+}
+
+/* =========================================================
+   10. RESPONSIVE DESIGN - MOBILE PHONES
+   ========================================================= */
+
+/* This breakpoint targets small mobile screens.
+   When the screen is 480px wide or smaller,
+   the layout becomes even simpler. */
+
+@media (max-width: 480px) {
+
+    /* Make the header heading smaller on phones. */
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    /* Reduce the header padding so it takes up less space. */
+    header {
+        padding: 15px;
+    }
+
+    /* Make the logo slightly smaller on mobile. */
+    header img {
+        width: 90px;
+    }
+
+    /* The footer text is slightly smaller on small screens. */
+    footer {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+    /*===================
+    Responsive design - Tablets
+    ===================*/
+    @media (max-width: 768px) {
+        .product-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        header nav ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+        header h1 {
+            font-size: 2rem;
+        }
+        main {
+            padding: 0 10px;
+        }
+    }
+}
+/*===================
+Forms
+====================*/
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #F7F1E3;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #D7B899;
+    text-align: left;
+}
+
+/* Style text boxes, dropdown and text areas */
+ form input,
+ form textarea,
+ form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #D7B899;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+
+}
+form textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px; /* Minimum height for textarea */
+}
+label{
+    font-weight: bold;
+    color: #3E2723;
+}
+ 
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 3px solid #A67C52;
+    outline-offset: 2px;
+    border-color: #6F4E37;
+}
+
+/*==========
+Buttons
+==========*/
+button {
+    background-color: #6F4E37;
+    color:#F7F1E3;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #B8865B;
+}
+
+button:active{
+    transform:scale(0.98);
+}
+
+button:focus {
+    outline: 3px solid #A67C52;
+    outline-offset: 3px;
+}
+
+/*=========================
+About page content
+==========================*/
+main h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+ main p{
+    line-height: 1.6;
+    font-size: 1.05rem;
+    max-width: 700px;
+    margin: 0 auto 15px auto;
+ }
+
+ main ul{
+    max-width:700px;
+    margin: 15px auto;
+    padding-left: 20px;
+    text-align: left;
+    line-height: 1.8;
+ }
+  
+ main ul li{
+    margin-bottom: 10px;
+    
+ }
+ main ul li::marker{
+    color: #6F4E37;
+    font-size: 1.2rem;
+ }
+
+ /*================
+ About page boxes
+ =================*/
+
+ main{
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;
+ }
+    .about-box{
+        background-color: #E8D5BE;
+        padding: 20px 25px;
+        border: 1px solid #B8865B;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .about-box h2{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .about-box p{
+        line-height: 1.6;
+        font-size: 1.05rem;
+        margin: 0;
+    }
+
+    .about-box ul{
+        padding-left: 20px;
+        line-height: 1.8;
+        margin: 0;
+    }
+
+    .about-box ul li{
+        color: #A67C52;
+    }
