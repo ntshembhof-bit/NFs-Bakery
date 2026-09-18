@@ -1,83 +1,65 @@
-Project Title 
-NF's Bakery
+# NF's Bakery
+A responsive bakery website built for WEDE5020 Web developement, showing HTML structure and CSS styling.
+## Sitemap
+![Sitemap](screenshots/siteframe.png)
+## Wireframe
+![wireframe](screenshots/wireframe.png)
 
-Student Information
-Name: Ntshembho Faith Tshuma
-Student Number: ST10538878
-Module: WEDE5020
+## Screenshots
 
-Project Overview 
-NF’s Bakery is a brand-new idea; we're starting our website from scratch. We're aiming for an online space that feels warm and inviting, where it's easy to understand our mission and find ways to participate. where our customers will be able to view our products and make enquires and orders.
+### Desktop View
+![Desktop screenshot](screenshots/desktop screenshot.png)
 
-Website Goals and objectives
-This website is all about giving NF's Bakery a clear and welcoming spot online. It's a place where you can easily get to know the business and look through all the yummy things they make.
-Here's what we want the website to do:
-•	Help more people discover NF's Bakery.
-•	Showcase all the bakery's treats and services.
-•	Give customers good information about each item.
-•	Let people ask questions about products and easily place orders.
-•	Share contact details and other important business info.
-•	Highlight special custom cakes and delicious goodies for different celebrations.
-We'll know the website is working well by checking how many people visit, how many questions they ask about our products, the messages customers send, and the new orders customers made.
+### Tablet View
+![Tablet screenshot](screenshots/tablet screenshot.png)
 
-Key Features and Functionality
-Our website will be easy to get around! It'll have a main Home page, a section where you can learn about us (the About Us page), and a Products page. On the Products page, you'll see all the different baked treats we make, with pictures and details about each one. If you have any questions about our goodies or want to order something special, there will be a place to ask us on the Enquiry page. You can also find a Contact page if you need to reach us. To help you look around, a simple menu will let you jump between all the different sections easily.
+### Mobile View
+![Mobile screenshot](screenshots/mobile screenshot.png)
 
-Timeline and Milestones 
-We will begin the project with planning, content research, file organisation, sitemap and wireframes. The next stage will involve the creation the initial HTML pages. The third stage will involve the developing of CSS styling and JavaScript functionality. The final stage will involve testing, fix errors and preparing the website for submission.
+## Changelog
 
-Sitemap 
-for NF's Bakery I have chosen five pages:
-- Home
-- Products
-  - Cakes
-  - Cupcakes
-  - Cookies
-  - Bread
-  - Pastries
- - Enquiry
- - Contact
+### Part 1 Feedback Fixes
+- Added sitemap and wireframe to document site structure and layout planning
+ - fixed my navigations because they were at the bottom instead of  being in top.
+ - Added a logo in every page because the logo was not apprearing in some of my pages.
 
-Part 1 Detailed 
-Part 1 is about starting the NF's Bakery website. This includes things like Planning and research, setting up the website structure, creating the HTML pages, adding content and collecting images and other resources, and setting up project repository to GitHub. 
+### Part 2 - CSS Styling and Responsive Design
+- Created external stylesheet (css/styles.css) and linked it to all pages
+- Styled header, logo, navigation menu, and footer
+- Added hover and focus states to navigation links for accessibility
+- Built responsive product grid layout using CSS Grid
+- Styled product images to display consistently as squares
+- Added responsive design with media queries for tablet (768px) and mobile (480px) breakpoints
+- Styled About Us and Contact pages using consistent content boxes
+- Styled enquiry form, including input fields, labels, and buttons
+- Added responsive sizes attribute to product images
 
-Changelog
-Initial website Development
- - Created the NF's Bakery website.
- - Added the Home, About us, Products, Enquiry and Contact pages.
- - Added bakery images.
- - Added NF's Bakery logo using Canva to create it.
- - Added navigation links between the website's pages.
- - uploaded the websites files and images to GitHub.
-Correction and updates
-- Corrected the Contact page by removing social media links because NF's Bakery does not have an existing social-media accounts.
- 
-References
-Ledeill, P. (n.d.) Birthday cakes with chocolate. Available at: https://www.pexels.com/photo/birthday-cakes-with-chocolate-19036040/ (Accessed: 12 August 2026).
-Ortega, A. (n.d.) Cupcakes in close-up photography. Available at: https://www.pexels.com/photo/cupcakes-in-close-up-photography-11128671/ (Accessed: 12 August 2026).
-Bigparadox (n.d.) Homemade cookies on a tray. Available at: https://www.pexels.com/photo/homemade-cookies-on-a-tray-20558711/ (Accessed: 12 August 2026).
-Gladkov, V. (n.d.) Bread in a bakery. Available at: https://www.pexels.com/photo/bread-in-a-bakery-15009979/ (Accessed: 12 August 2026).
-Boltneva, V. (n.d.) Sweet buns on display. Available at: https://www.pexels.com/photo/sweet-buns-on-display-19859268/ (Accessed: 12 August 2026).
+## References
+ Ledeill, P. (n.d.) Birthday cakes with chocolate. Available at: https://www.pexels.com/photo/birthday-cakes-with-chocolate-19036040/ (Accessed: 13 August 2026).
+Ortega, A. (n.d.) Cupcakes in close-up photography. Available at: https://www.pexels.com/photo/cupcakes-in-close-up-photography-11128671/ (Accessed: 13 August 2026).
+Bigparadox (n.d.) Homemade cookies on a tray. Available at: https://www.pexels.com/photo/homemade-cookies-on-a-tray-20558711/ (Accessed: 13 August 2026).
+Gladkov, V. (n.d.) Bread in a bakery. Available at: https://www.pexels.com/photo/bread-in-a-bakery-15009979/ (Accessed: 13 August 2026).
+Boltneva, V. (n.d.) Sweet buns on display. Available at: https://www.pexels.com/photo/sweet-buns-on-display-19859268/ (Accessed: 13 August 2026).
 Tutorialytics (2026) How to Use Github in VS Code (2026 Step by Step Guide). YouTube. Available at: https://youtu.be/MwAPPxgBiaA (Accessed: 13 August 2026).
-The Coder Coder (2026) How to use Git and GitHub in Vs Code. YouTube. Available at: https://youtu.be/1gDkpZ0AjlQ (Accessed: 13 August 2026).
+
+The Coder Coder (2026) How to use Git and GitHub. YouTube. Available at: https://youtu.be/1gDkpZ0AjlQ (Accessed: 13 August 2026).
+
 Visual Studio Code (2022) Using Git with Visual Studio Code. YouTube. Available at: https://youtu.be/i_23KUAEtUM (Accessed: 13 August 2026).
+
 Rohowsky, M. (n.d.) Stage, commit, and push in VS Code. YouTube. Available at: https://youtu.be/z5jZ9lrSpqk (Accessed: 13 August 2026).
-Canva (n.d.) Canva: Visual Suite. Available at: https://www.canva.com/ (Accessed: 12 August 2026).
-OpenAI (2026) ChatGPT. Available at: https://chatgpt.com/ (Accessed: 10 August 2026).
-Robbins, J.N. (2025) Learning Web Design: A Beginner’s Guide to HTML, CSS, JavaScript, and Web Images. 6th edn. Sebastopol, CA: O’Reilly Media.
-Meloni, J.C. and Kyrnin, J. (2018) HTML, CSS, and JavaScript All in One: Covering HTML5, CSS3, and ES6. 3rd edn. Indianapolis, IN: Sams Publishing.
 
+W3Schools (n.d.) CSS Horizontal Navigation Bar. Available at: https://www.w3schools.com/css/css_navbar_horizontal.asp⁠(Accessed: 12 September 2026). 
+W3Schools
+W3Schools (n.d.) W3.CSS Colors. Available at: https://www.w3schools.com/w3css/w3css_colors.asp⁠(Accessed: 12 September 2026).
 
-
-
-
-
-
-
-
-
-
-
-
+W3Schools (n.d.) CSS Backgrounds. Available at: https://www.w3schools.com/css/css_background.asp⁠ (Accessed: 12 September 2026).  
+W3Schools
+W3Schools (n.d.) CSS Borders. Available at: https://www.w3schools.com/css/css_border.asp⁠  (Accessed: 18 September 2026).
+W3Schools (n.d.) CSS Box Shadow. Available at: https://www.w3schools.com/css/css3_shadows_box.asp⁠  (Accessed: 12 September 2026). 
+W3Schools
+W3Schools (n.d.) CSS Pseudo-classes. Available at: https://www.w3schools.com/css/css_pseudo_classes.asp⁠(Accessed: 12 September 2026). This one specifically covers :hover, :focus and :active. 
+W3Schools
+W3Schools (n.d.) HTML <picture> Tag. Available at: https://www.w3schools.com/tags/tag_picture.asp⁠ (Accessed:  12 September 2026). This covers <picture>, <source>, srcset, sizes and responsive images. 
+W3Schools
 
 
