@@ -1,5 +1,50 @@
 # NF's Bakery
 A responsive bakery website built for WEDE5020 Web developement, showing HTML structure and CSS styling.
+
+## Student Information: Tshuma Ntshembho Faith 
+## Student Number: ST10538878
+## Module: WEDE5020 
+
+## Project Overview
+
+NF's Bakery is a bakery website created to showcase the bakery's products and provide customers with information about the business. The website displays cakes, cupcakes, cookies, pastries, and bread.
+
+Visitors can learn more about the bakery, view its products, submit enquiries through an enquiry form, and find the bakery's contact information. The website was initially developed using HTML and has been improved with CSS styling and responsive design.
+
+## Website Goals and Objectives
+
+The main goal of NF's Bakery is to create an attractive and user-friendly website where customers can explore the bakery's products and find important business information.
+
+The objectives are to:
+
+- Display bakery products using images and descriptions.
+- Provide information about the bakery, its mission, vision, and values.
+- Allow customers to submit enquiries through an enquiry form.
+- Make the bakery's contact information easy to find.
+- Provide clear navigation between the website pages.
+- Create a responsive layout for desktop, tablet, and mobile devices.
+
+  ## Key Features and Functionality
+
+- Home Page: Welcomes visitors to NF's Bakery.
+- About Us Page: Provides information about the bakery, its mission, vision, and values.
+- Products Page: Displays cakes, cupcakes, cookies, pastries, and bread.
+- Enquiry Page:Provides a form for customers to submit enquiries.
+- Contact Page: Displays the bakery's contact information and business hours.
+- Navigation Menu: Allows visitors to move between the five website pages.
+- Bakery Logo and Branding:Displays the bakery's logo, name, and slogan.
+- External CSS Stylesheet:Provides consistent colours, typography, spacing, and layout.
+- Responsive Design:** Uses CSS media queries to adjust the layout for different screen sizes.
+- Interactive Navigation:Uses hover and focus effects to improve navigation.
+
+## Timeline and Milestones
+
+- Part 1 – Planning and HTML Development: Researched the project, organised website files, prepared the sitemap and wireframes, and created the initial HTML pages.
+- Part 1 – Feedback Corrections:Corrected HTML issues, moved the navigation menu to the top of the pages, and added the bakery logo consistently across the website.
+- Part 2 – CSS Styling and Responsive Design: Created an external CSS stylesheet, styled the website, organised product images into a grid, and developed responsive layouts for different screen sizes.
+- Part 3 – Future Development: Further development will follow the Part 3 assignment requirements.
+
+
 ## Sitemap
 ![Sitemap](screenshots/siteframe.png)
 ## Wireframe
