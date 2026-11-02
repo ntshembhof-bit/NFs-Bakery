@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry - NF's</title>
+    <title>Enquiry - NF's Bakery</title>
+    <meta name="description" content="Submit your enquiries to NF's Bakery. We are here to assist you with any questions or requests regarding our products and services.">
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -34,7 +35,7 @@
     <!--========================-->
     <!--Customer Enquiry section-->
     <!--========================-->
-    <h1>Make an Enquiry</h1>
+    <h2>Make an Enquiry</h2>
 
     <p>Have a question about our products or want something special?
         Please fill in the enquiry form below.</p>
@@ -43,16 +44,20 @@
         <!--Enquiry Form-->
         <!--============-->
 
-        <form>
+        <form id="enquiry-form">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name">
+            <span class="error-message" id="name-error"></span>
             <br><br>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email">
+            <span class="error-message" id="email-error"></span>
             <br><br>
+
              <!--=================-->
              <!--Product Selection-->
              <!--=================-->
+
             <label for="order">What would you love to order?</label><br>
             <select type="order" id="order" name="order" >
                  <option value="">--Select a product--</option>
@@ -61,20 +66,25 @@
                  <option value="cookies">Cookies</option>
                  <option value="Pastries">Pastries</option>
                  <option value="bread">Bread</option>
-            </select><br><br>
+            </select>
+            <span class="error-message" id="order-error"></span>
+            <br><br>
 
            <label for="quantity">How many would you like to order</label><br>
-           <input type="number" id="quantity" name="quantity" min="1"required>
+           <input type="number" id="quantity" name="quantity" min="1">
+              <span class="error-message" id="quantity-error"></span>
            <br><br>
            <label for="date">Preffered collection date:</label><br>
            <input type="date" id="date" name="date">
            <br><br>
            
            <label for="message">Any other important information?</label><br>
-           <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+           <textarea id="message" name="message" rows="4" cols="50" ></textarea>
+           <span class="error-message" id="message-error"></span>
            <br><br>
            <input type="submit" value="Submit">
         </form>
+        <p id="enquiry-response" aria-live="polite"></p>
 </main>
         
 
@@ -86,4 +96,7 @@
         <p>&copy; 2026 NF's Bakery. All rights reserved.</p>
     </footer>
 </body>
+
+<script src="js/script.js"></script>
+
 </html> 

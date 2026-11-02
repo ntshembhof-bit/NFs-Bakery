@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - NF's Bakery</title>
+    <meta name="description" content="Get in touch with NF's Bakery. Contact us for inquiries, feedback, or any questions you may have about our products and services.">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -34,7 +35,7 @@
     <!--Contact Information-->
     <!--===================-->
     <div class="about-box">
-    <h1>Contact NF's Bakery</h1>
+    <h2>Contact NF's Bakery</h2>
     <p>We love to hear from you!</p>
     </div>
 
@@ -46,9 +47,26 @@
     <h2>Contact Details</h2>
     <p>Email: info@nfsbakery.com</p>
     <p>Phone: +1 (555) 123-4567</p>
+
     <address>
-        <p>Address: 123 Main Street, Polokwane, Limpopo</p>
+        <p>Location: Polokwane, Limpopo, South Africa</p>
+        
     </address>
+
+    </div>
+    <div class="about-box">
+        <h2>Find us on the map</h2>
+    <iframe 
+        src="https://www.google.com/maps?q=Polokwane,+Limpopo,+South+Africa&output=embed"
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy"
+        referrerpolicy="no-refferer-when-downgrade"
+        title="Interactive map showing Polokwane, Limpopo">
+    </iframe>
+    <p><small>Illustrative location for assignment purposes only</small></p>
     </div>
 
     <!--==============-->
@@ -61,6 +79,34 @@
     <p>Saturday: 9:00 AM - 3:00 PM</p>
     <p>Sunday: Closed</p>
     </div>
+
+    <!--=====================-->
+    <!--Contact Form-->
+    <!--====================-->
+    <div class="about-box">
+        <h2>Send us a Message</h2>
+        <p>Have feedback or a genaral question? Fillin the below.</p>
+
+        <form id="contact-form">
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" name="contact-name">
+            <span class="error-message" id="contact-name-error"></span>
+            <br><br>
+
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="contact-email">
+            <span class="error-message" id="contact-email-error"></span>
+            <br><br>
+
+            <label for="contact-message">Message:</label>
+            <textarea id="contact-message"  name="contact-message" rows="4" cols="50"></textarea>
+            <span class="error-message" id="contact-message-error"></span>
+            <br><br>
+
+            <input type="submit" value="send Message">         
+        </form>
+        <p id="contact-response" aria-live="polite"></p>
+    </div>
     </main>
     
     
@@ -71,4 +117,7 @@
         <p>&copy; 2026 NF's Bakery. All rights reserved.</p>
     </footer>
 </body>
+
+<script src="js/script.js"></script>
+
 </html>
