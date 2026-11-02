@@ -48,7 +48,8 @@ header img {
 }
 
 /* product images*/
-.product img {
+
+.products img {
     width: 100px;
     max-width: 250px;
     height: 250px;
@@ -463,3 +464,101 @@ main h2{
     .about-box ul li{
         color: #A67C52;
     }
+
+    /*========================
+    IMAGE LIGHTBOX POPOUT
+    ========================*/
+    #image-lightbox{
+        border: none;
+        border-radius: 10px;
+        padding: 20px; 
+        max-width: 500px;
+        width: 90%;
+        text-align: center;
+        background-color: White;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    #image-lightbox img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    #image-lightbox::backdrop {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    /*========================
+    Show/hide product details
+    ========================*/
+    according-details.hidden{
+        display: none;
+    }
+    according-details{
+        display: block;
+    }
+
+    /*=============================
+     Form validation error messages
+     =============================*/
+     .error-message {
+        display: block;
+        color: #B00020;
+        font-size: 0.9rem;
+        margin-top: -8px;
+        margin-bottom: 8px;
+     }
+      #enquiry-response,
+      #contact-response{
+        font-weight: bold;
+        color:#3E2723;
+        margin-top: 15px;
+      }   
+      
+      /*=========================
+      Animation
+      =========================*/
+      /*product cards fade in and slide when the page loads*/
+      @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+      }
+       .products-card {
+        animation: fadeInUp 0.6s ease ease-out;
+       transition: transform 0.3s ease, box-shadow 0.3s ease;
+       }
+       /* product cards scale up and shadow on hover */
+         .products-card:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+         }
+         /* product images zoom slightly on hover */
+            .products-card img:hover {
+                transition: transform 0.3s ease;
+                cursor: pointer;
+            }
+            .products-card img:hover {
+                transform: scale(1.05);
+            }
+            #image-lightbox[open] {
+                animation: fadeInUp 0.3s ease-out;
+            }
+
+            @media (prefers-reduced-motion: reduce){
+                *{
+                    animation: none !important;
+                    transition: none !important;
+                }
+            }
+            
+ /*Map styling*/
+            iframe{
+                max-width: 600%;
+                height: 450px;
+                border-radius: 10px;
+            }
