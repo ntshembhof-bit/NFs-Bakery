@@ -10,6 +10,7 @@ A responsive bakery website built for WEDE5020 Web developement, showing HTML st
 NF's Bakery is a bakery website created to showcase the bakery's products and provide customers with information about the business. The website displays cakes, cupcakes, cookies, pastries, and bread.
 
 Visitors can learn more about the bakery, view its products, submit enquiries through an enquiry form, and find the bakery's contact information. The website was initially developed using HTML and has been improved with CSS styling and responsive design.
+ Live website:https://ntshembhof-bit.github.io/NFs-Bakery/products.html
 
 ## Website Goals and Objectives
 
