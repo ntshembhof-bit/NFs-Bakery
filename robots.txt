@@ -1,0 +1,4 @@
+User-gent: *
+Allow: /
+
+Sitemap: https://ntshembhof-bit.github.io/NFs-Bakery/sitemap.xml
